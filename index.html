@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fanambinantsoa Haja | DevOps Junior</title>
+    <meta name="description" content="Portfolio de Fanambinantsoa Haja — DevOps &amp; Security. Linux, Terraform, Ansible, Docker, Wazuh, Threat Hunting, Sigma, MITRE ATT&amp;CK et CI/CD.">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+</head>
+<body>
+    <canvas id="bg-animation"></canvas>
+    <nav>
+        <div class="logo">Fanambina<span>.</span></div>
+        <ul>
+            <li><a href="#home" data-fr="Accueil" data-en="Home">Home</a></li>
+            <li><a href="#about" data-fr="À propos" data-en="About">About</a></li>
+            <li><a href="#skills" data-fr="Compétences" data-en="Skills">Skills</a></li>
+            <li><a href="#projects" data-fr="Projets" data-en="Projects">Projects</a></li>
+            <li><a href="#journey" data-fr="Parcours" data-en="Journey">Journey</a></li>
+            <li><a href="#contact" data-fr="Contact" data-en="Contact">Contact</a></li>
+        </ul>
+        <div class="nav-controls">
+            <button id="lang-toggle" class="control-btn" type="button">
+                <i class="fa-solid fa-language"></i> <span id="lang-text">FR</span>
+            </button>
+            <button id="theme-toggle" class="control-btn" type="button">
+                <i class="fa-solid fa-moon" id="theme-icon"></i>
+            </button>
+        </div>
+    </nav>
+
+    <section class="hero" id="home">
+        <div class="hero-left">
+            <div class="hire-badge">
+                <span class="pulse-dot"></span>
+                <span data-fr="Disponible pour le recrutement" data-en="Available for hire">Available for hire</span>
+            </div>
+            <p class="hello" data-fr="Bonjour, je suis" data-en="Hello, I am">Hello, I am</p>
+            <h1>Fanambinantsoa Haja</h1>
+            <h2 id="typing"></h2>
+            <p class="hero-text"
+               data-fr="Étudiant en Génie Logiciel passionné par l'automatisation, l'administration Linux, les infrastructures sécurisées et le threat hunting. Mon objectif est de devenir DevOps / SecOps Engineer en concevant des infrastructures modernes, sécurisées et automatisées."
+               data-en="Software Engineering student passionate about automation, Linux administration, secure infrastructures and threat hunting. My goal is to become a DevOps / SecOps Engineer by designing modern, secure and automated infrastructures.">
+                Software Engineering student passionate about automation, Linux administration, secure infrastructures and threat hunting. My goal is to become a DevOps / SecOps Engineer by designing modern, secure and automated infrastructures.
+            </p>
+            <div class="hero-buttons">
+                <a href="assets/cv/CV_Fanambina_FR_Styled.pdf" id="cv-download" class="btn btn-primary"
+                   data-fr="Télécharger mon CV" data-en="Download CV">Download CV</a>
+                <a href="#projects" class="btn btn-secondary"
+                   data-fr="Voir mes projets" data-en="See my projects">See my projects</a>
+            </div>
+        </div>
+        <div class="hero-right">
+            <img src="tamby.jpg" alt="Fanambinantsoa Haja">
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="section-title">
+            <h2 data-fr="À propos de moi" data-en="About Me">About Me</h2>
+            <span></span>
+        </div>
+        <div class="about-content">
+            <div class="about-card">
+                <i class="fa-solid fa-server"></i>
+                <h3 data-fr="Infrastructure" data-en="Infrastructure">Infrastructure</h3>
+                <p data-fr="Administration Linux, virtualisation (QEMU/KVM, VMWare) et conception d'environnements fiables et sécurisés."
+                   data-en="Linux administration, virtualization (QEMU/KVM, VMWare) and designing reliable and secure environments.">
+                    Linux administration, virtualization (QEMU/KVM) and designing reliable and secure environments.
+                </p>
+            </div>
+            <div class="about-card">
+                <i class="fa-solid fa-gears"></i>
+                <h3 data-fr="Automatisation" data-en="Automation">Automation</h3>
+                <p data-fr="Pipelines CI/CD avec GitHub Actions, Terraform, Ansible et scripts Bash."
+                   data-en="CI/CD pipelines with GitHub Actions, Terraform, Ansible and Bash scripting.">
+                    CI/CD pipelines with GitHub Actions, Terraform, Ansible and Bash scripting.
+                </p>
+            </div>
+            <div class="about-card">
+                <i class="fa-solid fa-shield-halved"></i>
+                <h3 data-fr="Sécurité &amp; Threat Hunting" data-en="Security &amp; Threat Hunting">Security &amp; Threat Hunting</h3>
+                <p data-fr="Hardening Linux, Wazuh (SIEM), règles Sigma, MITRE ATT&amp;CK, détection et playbooks SOC."
+                   data-en="Linux hardening, Wazuh (SIEM), Sigma rules, MITRE ATT&amp;CK, detection and SOC playbooks.">
+                    Linux hardening, Wazuh (SIEM), Sigma rules, MITRE ATT&amp;CK, detection and SOC playbooks.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <div class="section-title">
+            <h2 data-fr="Compétences" data-en="Skills">Skills</h2>
+            <span></span>
+        </div>
+        <div class="skills-grid">
+            <div class="skill"><i class="fab fa-linux"></i><h3>Linux</h3></div>
+            <div class="skill"><i class="fas fa-terminal"></i><h3>Scripting Shell</h3></div>
+            <div class="skill"><i class="fas fa-network-wired"></i><h3>Ansible</h3></div>
+            <div class="skill"><i class="fas fa-cubes"></i><h3>Terraform</h3></div>
+            <div class="skill"><i class="fab fa-docker"></i><h3>Docker</h3></div>
+            <div class="skill"><i class="fa-solid fa-box-open"></i><h3>Vagrant</h3></div>
+            <div class="skill"><i class="fab fa-github"></i><h3>GitHub Actions</h3></div>
+            <div class="skill"><i class="fas fa-code-branch"></i><h3>Git</h3></div>
+            <div class="skill"><i class="fa-solid fa-shield-halved"></i><h3>Wazuh</h3></div>
+            <div class="skill"><i class="fa-solid fa-crosshairs"></i><h3>Sigma</h3></div>
+            <div class="skill"><i class="fa-solid fa-sitemap"></i><h3>MITRE ATT&amp;CK</h3></div>
+            <div class="skill"><i class="fas fa-server"></i><h3>Nginx</h3></div>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <div class="section-title">
+            <h2 data-fr="Mes projets" data-en="My Projects">My Projects</h2>
+            <span></span>
+        </div>
+        <div class="projects-container">
+
+            <div class="project-card">
+                <div class="project-icon"><i class="fa-solid fa-crosshairs"></i></div>
+                <h3 data-fr="Threat Hunting Linux Lab" data-en="Threat Hunting Linux Lab">Threat Hunting Linux Lab</h3>
+                <p data-fr="Lab de threat hunting complet : simulation d'attaques (Atomic-style) → auditd + Sysmon → Wazuh → détection mappée MITRE ATT&amp;CK. Règles Sigma custom, playbooks SOC, Terraform + Ansible. 8 techniques validées e2e (T1053, T1059, T1003, T1070, T1105, T1548, T1021…)."
+                   data-en="Full threat hunting lab: Atomic-style attack simulation → auditd + Sysmon → Wazuh → MITRE ATT&amp;CK mapped detection. Custom Sigma rules, SOC playbooks, Terraform + Ansible. 8 techniques validated end-to-end (T1053, T1059, T1003, T1070, T1105, T1548, T1021…).">
+                    Full threat hunting lab: Atomic-style attack simulation → auditd + Sysmon → Wazuh → MITRE ATT&amp;CK mapped detection. Custom Sigma rules, SOC playbooks, Terraform + Ansible. 8 techniques validated end-to-end (T1053, T1059, T1003, T1070, T1105, T1548, T1021…).
+                </p>
+                <div class="project-tags">
+                    <span>Wazuh</span><span>Sigma</span><span>MITRE ATT&amp;CK</span>
+                    <span>Terraform</span><span>Ansible</span><span>Sysmon</span>
+                </div>
+                <a href="https://github.com/fanambinalova/threat-hunting-linux-lab" target="_blank" rel="noopener" class="project-link">
+                    <span data-fr="Voir sur GitHub" data-en="View on GitHub">View on GitHub</span>
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </div>
+
+            <div class="project-card">
+                <div class="project-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                <h3 data-fr="Wazuh SOC — Mini Security Operations Center" data-en="Wazuh SOC — Mini Security Operations Center">Wazuh SOC — Mini Security Operations Center</h3>
+                <p data-fr="Déploiement d'un mini-SOC complet avec Wazuh (Indexer, Manager, Dashboard) via Docker. Agents sur VM sécurisée, FIM / Rootcheck / SCA, alerting temps réel (Slack + Gmail)."
+                   data-en="Complete mini-SOC with Wazuh (Indexer, Manager, Dashboard) via Docker. Agents on hardened VM, FIM / Rootcheck / SCA, real-time alerting (Slack + Gmail).">
+                    Complete mini-SOC with Wazuh (Indexer, Manager, Dashboard) via Docker. Agents on hardened VM, FIM / Rootcheck / SCA, real-time alerting (Slack + Gmail).
+                </p>
+                <div class="project-tags">
+                    <span>Wazuh</span><span>Docker</span><span>Ansible</span><span>SIEM</span>
+                </div>
+                <a href="https://github.com/fanambinalova/wazuh-soc" target="_blank" rel="noopener" class="project-link">
+                    <span data-fr="Voir sur GitHub" data-en="View on GitHub">View on GitHub</span>
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </div>
+
+            <div class="project-card">
+                <div class="project-icon"><i class="fa-solid fa-server"></i></div>
+                <h3 data-fr="Terraform + Secure Linux Server" data-en="Terraform + Secure Linux Server">Terraform + Secure Linux Server</h3>
+                <p data-fr="Provisioning automatisé de VMs avec Terraform (libvirt) + cloud-init. Hardening Ansible : SSH sécurisé, UFW, Fail2Ban, backups et sudo restreint."
+                   data-en="Automated VM provisioning with Terraform (libvirt) + cloud-init. Ansible hardening: secure SSH, UFW, Fail2Ban, backups and restricted sudo.">
+                    Automated VM provisioning with Terraform (libvirt) + cloud-init. Ansible hardening: secure SSH, UFW, Fail2Ban, backups and restricted sudo.
+                </p>
+                <div class="project-tags">
+                    <span>Terraform</span><span>Ansible</span><span>libvirt</span><span>Hardening</span>
+                </div>
+                <a href="https://github.com/fanambinalova/terraform-libvirt-server" target="_blank" rel="noopener" class="project-link">
+                    <span data-fr="Voir sur GitHub" data-en="View on GitHub">View on GitHub</span>
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </div>
+
+            <div class="project-card">
+                <div class="project-icon"><i class="fa-solid fa-rocket"></i></div>
+                <h3 data-fr="DevOps Automatic Deployment" data-en="DevOps Automatic Deployment">DevOps Automatic Deployment</h3>
+                <p data-fr="Application Node.js conteneurisée (Docker Compose), Nginx reverse proxy, HTTPS et pipeline CI/CD GitHub Actions."
+                   data-en="Containerized Node.js app (Docker Compose), Nginx reverse proxy, HTTPS and GitHub Actions CI/CD pipeline.">
+                    Containerized Node.js app (Docker Compose), Nginx reverse proxy, HTTPS and GitHub Actions CI/CD pipeline.
+                </p>
+                <div class="project-tags">
+                    <span>Docker</span><span>Nginx</span><span>Node.js</span><span>CI/CD</span>
+                </div>
+                <a href="https://github.com/fanambinalova/auto-deploy-devops" target="_blank" rel="noopener" class="project-link">
+                    <span data-fr="Voir sur GitHub" data-en="View on GitHub">View on GitHub</span>
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </div>
+
+            <div class="project-card">
+                <div class="project-icon"><i class="fa-solid fa-robot"></i></div>
+                <h3 data-fr="Sentinelle Mobile — Analyseur de Logs IA" data-en="Sentinelle Mobile — AI Log Analyzer">Sentinelle Mobile — AI Log Analyzer</h3>
+                <p data-fr="Outil mobile de cybersécurité avec Google Gemini pour l'analyse intelligente des logs Linux. Interface Streamlit, développé sur Android (UserLand)."
+                   data-en="Mobile cybersecurity tool with Google Gemini for intelligent Linux log analysis. Streamlit UI, developed on Android (UserLand).">
+                    Mobile cybersecurity tool with Google Gemini for intelligent Linux log analysis. Streamlit UI, developed on Android (UserLand).
+                </p>
+                <div class="project-tags">
+                    <span>Python</span><span>Gemini AI</span><span>Streamlit</span><span>Cybersec</span>
+                </div>
+                <a href="https://github.com/fanambinalova/Analyseur-Logs-Intelligent" target="_blank" rel="noopener" class="project-link">
+                    <span data-fr="Voir sur GitHub" data-en="View on GitHub">View on GitHub</span>
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </div>
+
+            <div class="project-card">
+                <div class="project-icon"><i class="fa-solid fa-network-wired"></i></div>
+                <h3 data-fr="Environnement Linux Virtualisé" data-en="Virtualized Linux Environment">Virtualized Linux Environment</h3>
+                <p data-fr="Infrastructure DevOps sous QEMU/KVM. Automatisation Ansible + Bash et pipelines CI/CD GitHub Actions."
+                   data-en="DevOps infrastructure under QEMU/KVM. Ansible + Bash automation and GitHub Actions CI/CD pipelines.">
+                    DevOps infrastructure under QEMU/KVM. Ansible + Bash automation and GitHub Actions CI/CD pipelines.
+                </p>
+                <div class="project-tags">
+                    <span>QEMU/KVM</span><span>Ansible</span><span>Bash</span><span>CI/CD</span>
+                </div>
+                <a href="https://github.com/fanambinalova/Evironnement-linux-virtualise-automatise" target="_blank" rel="noopener" class="project-link">
+                    <span data-fr="Voir sur GitHub" data-en="View on GitHub">View on GitHub</span>
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </div>
+
+            <div class="project-card">
+                <div class="project-icon"><i class="fa-solid fa-calculator"></i></div>
+                <h3 data-fr="Subnetting Calculator Mobile" data-en="Subnetting Calculator Mobile">Subnetting Calculator Mobile</h3>
+                <p data-fr="Calcul de sous-réseaux (IP/CIDR, VLSM) avec React Native et Expo. Pipeline CI/CD GitHub Actions + EAS Build."
+                   data-en="Subnetting calculator (IP/CIDR, VLSM) with React Native and Expo. CI/CD with GitHub Actions + EAS Build.">
+                    Subnetting calculator (IP/CIDR, VLSM) with React Native and Expo. CI/CD with GitHub Actions + EAS Build.
+                </p>
+                <div class="project-tags">
+                    <span>React Native</span><span>Expo</span><span>CI/CD</span><span>GitHub Actions</span>
+                </div>
+                <a href="https://github.com/fanambinalova/SubnetCalculatorMobile" target="_blank" rel="noopener" class="project-link">
+                    <span data-fr="Voir sur GitHub" data-en="View on GitHub">View on GitHub</span>
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </div>
+
+        </div>
+        <div class="more-projects">
+            <a href="https://github.com/fanambinalova" target="_blank" rel="noopener" class="btn btn-secondary">
+                <span data-fr="Voir plus sur GitHub" data-en="See more on GitHub">See more on GitHub</span>
+                <i class="fa-brands fa-github"></i>
+            </a>
+        </div>
+    </section>
+
+    <section class="journey" id="journey">
+        <div class="section-title">
+            <h2 data-fr="Mon parcours" data-en="My Journey">My Journey</h2>
+            <span></span>
+        </div>
+        <div class="timeline">
+            <div class="timeline-item">
+                <h3>2022 – 2023</h3>
+                <h4 data-fr="Baccalauréat Scientifique (Série S)" data-en="Scientific Baccalaureate (S Series)">Scientific Baccalaureate (S Series)</h4>
+                <p data-fr="Lycée Antanifotsy — Vakinankaratra" data-en="Antanifotsy High School — Vakinankaratra">Antanifotsy High School — Vakinankaratra</p>
+            </div>
+            <div class="timeline-item">
+                <h3>2024 – 2027</h3>
+                <h4 data-fr="Licence en Génie Logiciel (En cours)" data-en="Bachelor in Software Engineering (In Progress)">Bachelor in Software Engineering (In Progress)</h4>
+                <p data-fr="ASJA Antsirabe — Parcours Génie Logiciel" data-en="ASJA Antsirabe — Software Engineering Track">ASJA Antsirabe — Software Engineering Track</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="section-title">
+            <h2 data-fr="Contact" data-en="Contact">Contact</h2>
+            <span></span>
+        </div>
+        <div class="contact-container">
+            <a href="mailto:fanambinalova@gmail.com" title="Email"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://github.com/fanambinalova" target="_blank" rel="noopener" title="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/fanambinalova" target="_blank" rel="noopener" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <p style="text-align:center;margin-top:30px;font-size:15px;color:var(--text);">
+            <span data-fr="Antsirabe, Madagascar • +261 34 57 992 98" data-en="Antsirabe, Madagascar • +261 34 57 992 98">Antsirabe, Madagascar • +261 34 57 992 98</span>
+        </p>
+    </section>
+
+    <footer class="site-footer">
+        <p>© 2026 Fanambina. | <span data-fr="Automate. Secure. Scale. 🚀" data-en="Automate. Secure. Scale. 🚀">Automate. Secure. Scale. 🚀</span> | ~ DevOps Junior</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
