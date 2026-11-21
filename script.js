@@ -34,8 +34,8 @@ function applyLanguage(lang) {
     localStorage.setItem('lang', lang);
     if (cvBtn) {
         cvBtn.href = lang === 'fr'
-            ? 'assets/cv/CV_Fanambina_FR_Balanced.pdf'
-            : 'assets/cv/CV_Fanambina_EN_Balanced.pdf';
+            ? 'assets/cv/CV_Fanambinantsoa_Haja_FR.pdf'
+            : 'assets/cv/CV_Fanambinantsoa_Haja_EN.pdf';
     }
 }
 applyLanguage(currentLang);
