@@ -34,8 +34,8 @@ function applyLanguage(lang) {
     localStorage.setItem('lang', lang);
     if (cvBtn) {
         cvBtn.href = lang === 'fr'
-            ? 'assets/cv/CV_Fanambina_FR_Styled.pdf'
-            : 'assets/cv/CV_Fanambina_EN_Styled.pdf';
+            ? 'assets/cv/CV_Fanambina_FR_Balanced.pdf'
+            : 'assets/cv/CV_Fanambina_EN_Balanced.pdf';
     }
 }
 applyLanguage(currentLang);
@@ -50,8 +50,8 @@ langToggle.addEventListener('click', () => {
 
 const typingElement = document.getElementById('typing');
 const translations = {
-    fr: ['DevOps Engineer', 'Passionné Linux', 'Docker & Terraform', 'Threat Hunting', 'Sécurité & Wazuh'],
-    en: ['DevOps Engineer', 'Linux Enthusiast', 'Docker & Terraform', 'Threat Hunting', 'Security & Wazuh']
+    fr: ['DevSecOps Engineer', 'Network Engineer', 'Docker & Terraform', 'Threat Hunting', 'Sécurité & Wazuh'],
+    en: ['DevSecOps Engineer', 'Network Engineer', 'Docker & Terraform', 'Threat Hunting', 'Security & Wazuh']
 };
 let textIndex = 0, charIndex = 0, deleting = false;
 
